@@ -1535,7 +1535,7 @@ class ExportManager:
     @staticmethod
     def export_to_json(data: Dict, filename: str) -> str:
         """Export dictionary to JSON string"""
-        return json.dumps(data, indent=2)
+        return json.dumps(data, indent=2, default=str)
     
     @staticmethod
     def create_analysis_report(complete_results: Dict) -> str:
